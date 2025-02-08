@@ -1,0 +1,35 @@
+.dot-ellipsis {
+	display: inline-block;
+	position: relative;
+	width: 60px;
+	height: 30px;
+}
+
+.dot-ellipsis:after {
+	content: '...';
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	font-size: 2rem;
+	color: #4b5563; /* Gris oscuro */
+	animation: dot-ellipsis 2s infinite;
+}
+
+@keyframes dot-ellipsis {
+	0%,
+	20% {
+		color: rgba(75, 85, 99, 0);
+		text-shadow: 0.25em 0 0 rgba(75, 85, 99, 0), 0.5em 0 0 rgba(75, 85, 99, 0);
+	}
+	40% {
+		color: #4b5563; /* Gris oscuro */
+		text-shadow: 0.25em 0 0 rgba(75, 85, 99, 0), 0.5em 0 0 rgba(75, 85, 99, 0);
+	}
+	60% {
+		text-shadow: 0.25em 0 0 #4b5563, 0.5em 0 0 rgba(75, 85, 99, 0);
+	}
+	80%,
+	100% {
+		text-shadow: 0.25em 0 0 #4b5563, 0.5em 0 0 #4b5563;
+	}
+}
