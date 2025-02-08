@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import useCrudApi from './hooks/useCrudApi';
-import UserCard from './components/userCard';
+import UserCard from './components/UserCard';
 import UserModal from './components/UserModal';
 import Header from './components/Header';
 import './components/Header.css';
