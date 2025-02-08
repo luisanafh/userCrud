@@ -1,4 +1,3 @@
-// src/App.jsx
 import { useEffect, useState } from 'react';
 import './App.css';
 import useCrudApi from './hooks/useCrudApi';

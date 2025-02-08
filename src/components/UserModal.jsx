@@ -2,12 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { z } from 'zod';
 
 const userSchema = z.object({
-	first_name: z.string().min(1, 'El nombre es requerido'),
-	last_name: z.string().min(1, 'El apellido es requerido'),
-	email: z.string().email('Correo electrónico no válido'),
-	password: z.string().min(6, 'La contraseña debe tener al menos 6 caracteres'),
+	first_name: z.string().min(1, 'Name is required'),
+	last_name: z.string().min(1, 'Last name is required'),
+	email: z.string().email('Invalid email'),
+	password: z.string().min(6, 'Password must be at least 6 characters long'),
 	birthday: z.string(),
-	image_url: z.string().url('URL de imagen no válida'),
+	image_url: z.string().url('Invalid image URL'),
 });
 
 const UserModal = ({ isOpen, onClose, onSave, userToEdit }) => {
