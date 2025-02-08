@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import useCrudApi from './hooks/useCrudApi';
-import UserCard from './components/UserCard';
+import Card from './components/Card';
 import UserModal from './components/UserModal';
 import Header from './components/Header';
 import './components/Header.css';
@@ -52,7 +52,7 @@ function App() {
 		<div>
 			{error && <p>Error: {error}</p>}
 			<Header onAddUser={() => setIsModalOpen(true)} />
-			<UserCard
+			<Card
 				users={users}
 				pending={pending}
 				remove={remove}

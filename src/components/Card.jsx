@@ -3,7 +3,7 @@ import Pagination from './Pagination';
 import './Loading.css';
 import Empty from './Empty';
 
-const UserCard = ({ users, pending, remove, edit, onAddUser }) => {
+const Card = ({ users, pending, remove, edit, onAddUser }) => {
 	const [currentPage, setCurrentPage] = useState(1);
 	const usersPerPage = 9;
 
@@ -88,4 +88,4 @@ const UserCard = ({ users, pending, remove, edit, onAddUser }) => {
 	);
 };
 
-export default UserCard;
+export default Card;
